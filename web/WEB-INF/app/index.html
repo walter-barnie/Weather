@@ -20,15 +20,15 @@
       ng-submit="weatherForm.$valid && weatherCtrl.getWeatherData(weatherCtrl.zipCode)">
     Enter a Zip Code:<input name="zipCode" id="zipCode" ng-model="weatherCtrl.zipCode" class="ng-pristine ng-invalid"
                             placeholder="01234" ng-pattern="/^[0-9]{1,5}$/" type="text" ng-maxlength="5"
-                            ng-minlength="5" required auto-focus tabindex="1"/>
-    <input type="submit" value="Submit" tabindex="2" focus-input>{{zipCode}}>
+                            ng-minlength="5" required auto-focus tabindex="1"/>  {{zipCode}}
+    <input type="submit" value="Submit" tabindex="2" focus-input />
     <img id="spinner" ng-src="img/spinner.gif" ng-show="loading">
         <span class="error" ng-show="weatherForm.zipCode.$error.minlength">
           Too short!</span>
     <span class="error" ng-show="weatherForm.zipCode.$error.pattern">
               Please enter only 5 numbers</span><br>
 
-    <div>Weather form is {{weatherForm.$valid}}</div>
+    <!--<div>Weather form is {{weatherForm.$valid}}</div> -->
 
     <div ng-show="weatherCtrl.weatherData.Success === false"><strong>Weather not found for zip code</strong></div>
     <div ng-show="weatherCtrl.weatherData.Success === true">

@@ -5,11 +5,9 @@ describe('Weather controllers', function () {
 
     describe('WeatherCtrl', function () {
 
-        beforeEach(module('weatherApp'));
+        //beforeEach(module('weatherControllers'));
 
-        it('should create "weather" model with data', inject(function ($controller) {
-            var scope = {},
-                ctrl = $controller('WeatherCtrl', {$scope: scope});
+         /* debugger;
             expect(scope.weather.Success).toBe(true);
             expect(scope.weather.City).toBe("Worcester");
             expect(scope.weather.Description).toBe("Cloudy");
@@ -23,8 +21,15 @@ describe('Weather controllers', function () {
             expect(scope.weather.WeatherID).toBe(14);
             expect(scope.weather.WeatherStationCity).toBe("Worcester");
             expect(scope.weather.Wind).toBe("VRB5");
-            expect(scope.weather.WindChill).toBe("");
-        }));
+            expect(scope.weather.WindChill).toBe("");*/
+        it('should create "weather" model with data', inject(function ($scope) {
+            var scope = {},
+                ctrl = $controller('weatherControllers', {$scope: scope});
+            expect(scope.zipCode).toBe("");
 
+        }));
+       /* it("Should Work", function() {
+                expect($scope.loading).toBe(true);
+            })*/
     });
 });

@@ -1,7 +1,5 @@
-'use strict';
-
-/* jasmine specs for filters go here */
-
-describe('filter', function() {
-
-});
+describe('filters', function() {
+    it("Should Work", function() {
+        expect(true).toBe(true);
+    })
+})

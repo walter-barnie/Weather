@@ -13,20 +13,16 @@ import java.io.IOException;
  * Created by WBarnie on 2/19/2015.
  */
 public class WeatherManager {
-   /* @Autowired
-    private JAXBMapperSample jaxbMapperSample;
-
-    public void setJaxbMapperSample(JAXBMapperSample jaxbMapperSample) {
-        this.jaxbMapperSample = jaxbMapperSample;
-    }*/
-
     public String getWeatherByZipCode(String zipCode) {
-        String json = null;
+        String json = "{ \"Success\": false}";
         Weather weather = new Weather();
         WeatherSoap weatherSoap = weather.getWeatherSoap12();
-        WeatherReturn weatherReturn = weatherSoap.getCityWeatherByZIP(zipCode);
-        //ObjectMapper mapper = new ObjectMapper();
-        //json = mapper.writeValueAsString(weatherReturn);
+        WeatherReturn weatherReturn = null;
+        try {
+            weatherReturn = weatherSoap.getCityWeatherByZIP(zipCode);
+        } catch (Exception e) {
+            return json;
+        }
         try {
             JAXBMapperSample jaxbMapperSample = new JAXBMapperSample();
             json = jaxbMapperSample.jsonMarshall(weatherReturn);
