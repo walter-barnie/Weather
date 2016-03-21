@@ -1,0 +1,16 @@
+{
+  "Success": true,
+  "ResponseText": "City Found",
+  "State": "ME",
+  "City": "Bangor",
+  "WeatherStationCity": "Bangor",
+  "WeatherID": 14,
+  "Description": "Cloudy",
+  "Temperature": "52",
+  "RelativeHumidity": "83",
+  "Wind": "N7",
+  "Pressure": "30.08F",
+  "Visibility": "",
+  "WindChill": "",
+  "Remarks": ""
+}
