@@ -19,14 +19,17 @@
 *.rar
 *.tar
 *.zip
+
+# ide file
 .idea
+*.iml
 
 # Logs and databases #
 ######################
 *.log
 *.sql
 *.sqlite
-*.iml
+
 
 # OS generated files #
 ######################
