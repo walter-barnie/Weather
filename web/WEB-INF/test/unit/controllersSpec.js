@@ -3,33 +3,59 @@
 /* jasmine specs for controllers go here */
 describe('Weather controllers', function () {
 
-    describe('WeatherCtrl', function () {
 
-        //beforeEach(module('weatherControllers'));
+        beforeEach(module('weatherApp'));
+        beforeEach(module('weatherServices'));
 
-         /* debugger;
-            expect(scope.weather.Success).toBe(true);
-            expect(scope.weather.City).toBe("Worcester");
-            expect(scope.weather.Description).toBe("Cloudy");
-            expect(scope.weather.Pressure).toBe("30.03S");
-            expect(scope.weather.RelativeHumidity).toBe("97");
-            expect(scope.weather.Remarks).toBe("");
-            expect(scope.weather.ResponseText).toBe("City Found");
-            expect(scope.weather.State).toBe("MA");
-            expect(scope.weather.Temperature).toBe("54");
-            expect(scope.weather.Visibility).toBe("");
-            expect(scope.weather.WeatherID).toBe(14);
-            expect(scope.weather.WeatherStationCity).toBe("Worcester");
-            expect(scope.weather.Wind).toBe("VRB5");
-            expect(scope.weather.WindChill).toBe("");*/
-        it('should create "weather" model with data', inject(function ($scope) {
-            var scope = {},
-                ctrl = $controller('weatherControllers', {$scope: scope});
-            expect(scope.zipCode).toBe("");
 
+    describe('WeatherController', function(){
+        var mockScope, controller, backend;
+
+        beforeEach(angular.mock.inject(function($httpBackend) {
+          backend = $httpBackend;
+            backend.expect("GET", "???").respond(
+                {
+                  "Success": true,
+                  "ResponseText": "City Found",
+                  "State": "MA",
+                  "City": "Worcester",
+                  "WeatherStationCity": "Worcester",
+                  "WeatherID": 14,
+                  "Description": "Cloudy",
+                  "Temperature": "54",
+                  "RelativeHumidity": "97",
+                  "Wind": "VRB5",
+                  "Pressure": "30.03S",
+                  "Visibility": "",
+                  "WindChill": "",
+                  "Remarks": ""
+                }
+
+            )
+          $httpBackend = _$httpBackend_;
+          $httpBackend.expectGET('Weather_data/01603.json').
+              respond([{Success: 'true'}, {ResponseText: 'City Found'}]);
+
+          scope = $rootScope.$new();
+          ctrl = $controller('WeatherController', {
+              $scope: scope
+          });
         }));
-       /* it("Should Work", function() {
-                expect($scope.loading).toBe(true);
+        it('should create "phones" model with 2 phones fetched from xhr', function() {
+            expect(scope.phones).toEqualData([]);
+            $httpBackend.flush();
+
+            expect(scope.phones).toEqualData(
+                [{name: 'Nexus S'}, {name: 'Motorola DROID'}]);
+          });
+
+
+          it('should set the default value of orderProp model', function() {
+            expect(scope.orderProp).toBe('age');
+          });
+        });
+
+        /*it("Should Work", function() {
+                expect(this.zipCode).toBe(undefined);
             })*/
-    });
 });

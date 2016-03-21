@@ -6,7 +6,9 @@ var weatherApp = angular.module('weatherApp', [
     'weatherControllers',
     'weatherServices',
     'weatherDirectives'
-]).
-    config(['$routeProvider', function ($routeProvider) {
+]);
+
+
+weatherApp.config(['$routeProvider', function ($routeProvider) {
         $routeProvider.otherwise({redirectTo: '/'});
     }]);

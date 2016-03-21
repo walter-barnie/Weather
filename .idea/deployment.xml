@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" serverName="" uploadOnCheckin="3ef5fe97-26fb-4888-97f2-19bc8a32e31c">
-    <option name="myUploadOnCheckinName" value="https://github.com/walter-barnie/Weather.git" />
+  <component name="PublishConfigData" uploadOnCheckin="3ef5fe97-26fb-4888-97f2-19bc8a32e31c">
+    <option name="myUploadOnCheckinName" value="" />
   </component>
 </project>

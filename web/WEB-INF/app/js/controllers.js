@@ -1,7 +1,6 @@
 'use strict';
 
 /* Controllers */
-(function () {
     var weatherControllers = angular.module('weatherControllers', []);
 
     weatherControllers.controller('WeatherController', ['$scope', '$http', '$log', 'WeatherService', function ($scope, $http, $log, WeatherService) {
@@ -16,9 +15,8 @@
                 thisWeather.zipCode = '';
                 $scope.loading = false;
             }).error(function (data) {
-                $scope.loading = false
-                console.log('Error' + data);
+                $scope.loading = false;
+                console.log('Error ' + data);
             });
         }
     }]);
-})();
