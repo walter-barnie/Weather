@@ -1,0 +1,16 @@
+{
+  "Success": true,
+  "ResponseText": "City Found",
+  "State": "NJ",
+  "City": "Ramsey",
+  "WeatherStationCity": "Newark",
+  "WeatherID": 9,
+  "Description": "Partly Sunny",
+  "Temperature": "61",
+  "RelativeHumidity": "75",
+  "Wind": "N9",
+  "Pressure": "30.53R",
+  "Visibility": "",
+  "WindChill": "",
+  "Remarks": ""
+}

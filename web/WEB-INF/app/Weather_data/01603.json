@@ -1,0 +1,16 @@
+{
+  "Success": true,
+  "ResponseText": "City Found",
+  "State": "MA",
+  "City": "Worcester",
+  "WeatherStationCity": "Worcester",
+  "WeatherID": 14,
+  "Description": "Cloudy",
+  "Temperature": "54",
+  "RelativeHumidity": "97",
+  "Wind": "VRB5",
+  "Pressure": "30.03S",
+  "Visibility": "",
+  "WindChill": "",
+  "Remarks": ""
+}
