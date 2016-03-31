@@ -10,6 +10,7 @@
         var thisWeather = this;
         this.getWeatherData = function (zipCode) {
             $scope.loading = true;
+            console.log("WeatherController hit");
             WeatherService.getWeatherData(zipCode).success(function (data) {
                 thisWeather.weatherData = data;
                 thisWeather.zipCode = '';
