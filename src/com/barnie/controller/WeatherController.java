@@ -24,9 +24,6 @@ public class WeatherController {
     public
     @ResponseBody
     String getWeatherData(@RequestParam(required = true) final String zipCode) {
-       /* if (null == zipCode) {
-            return "redirect:/index.html";
-        }*/
         String weatherData = weatherManager.getWeatherByZipCode(zipCode);
         return weatherData;
     }

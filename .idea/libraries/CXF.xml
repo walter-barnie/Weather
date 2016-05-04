@@ -60,15 +60,6 @@
       <root url="jar://$PROJECT_DIR$/apache-cxf-2.7.14_lib/serializer-2.7.1.jar!/" />
       <root url="jar://$PROJECT_DIR$/apache-cxf-2.7.14_lib/slf4j-api-1.7.7.jar!/" />
       <root url="jar://$PROJECT_DIR$/apache-cxf-2.7.14_lib/slf4j-jdk14-1.7.7.jar!/" />
-      <root url="jar://$PROJECT_DIR$/apache-cxf-2.7.14_lib/spring-aop-3.0.7.RELEASE.jar!/" />
-      <root url="jar://$PROJECT_DIR$/apache-cxf-2.7.14_lib/spring-asm-3.0.7.RELEASE.jar!/" />
-      <root url="jar://$PROJECT_DIR$/apache-cxf-2.7.14_lib/spring-beans-3.0.7.RELEASE.jar!/" />
-      <root url="jar://$PROJECT_DIR$/apache-cxf-2.7.14_lib/spring-context-3.0.7.RELEASE.jar!/" />
-      <root url="jar://$PROJECT_DIR$/apache-cxf-2.7.14_lib/spring-core-3.0.7.RELEASE.jar!/" />
-      <root url="jar://$PROJECT_DIR$/apache-cxf-2.7.14_lib/spring-expression-3.0.7.RELEASE.jar!/" />
-      <root url="jar://$PROJECT_DIR$/apache-cxf-2.7.14_lib/spring-jms-3.0.7.RELEASE.jar!/" />
-      <root url="jar://$PROJECT_DIR$/apache-cxf-2.7.14_lib/spring-tx-3.0.7.RELEASE.jar!/" />
-      <root url="jar://$PROJECT_DIR$/apache-cxf-2.7.14_lib/spring-web-3.0.7.RELEASE.jar!/" />
       <root url="jar://$PROJECT_DIR$/apache-cxf-2.7.14_lib/stax2-api-3.1.4.jar!/" />
       <root url="jar://$PROJECT_DIR$/apache-cxf-2.7.14_lib/velocity-1.7.jar!/" />
       <root url="jar://$PROJECT_DIR$/apache-cxf-2.7.14_lib/woodstox-core-asl-4.4.1.jar!/" />
